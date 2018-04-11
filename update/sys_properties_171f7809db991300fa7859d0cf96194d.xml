@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_properties">
+    <sys_properties action="INSERT_OR_UPDATE">
+        <choices/>
+        <description>NBS Ticket activity formatter fields</description>
+        <ignore_cache>false</ignore_cache>
+        <is_private>false</is_private>
+        <name>glide.ui.x_184121_nbs_nbs_ticket_activity.fields</name>
+        <read_roles/>
+        <suffix/>
+        <sys_class_name>sys_properties</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-04-04 08:53:09</sys_created_on>
+        <sys_id>171f7809db991300fa7859d0cf96194d</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>glide.ui.x_184121_nbs_nbs_ticket_activity.fields</sys_name>
+        <sys_package display_value="NBS" source="x_184121_nbs">3e3a8134dbd11300fa7859d0cf9619d1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NBS">3e3a8134dbd11300fa7859d0cf9619d1</sys_scope>
+        <sys_update_name>sys_properties_171f7809db991300fa7859d0cf96194d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-04-05 09:39:13</sys_updated_on>
+        <type>string</type>
+        <value>caller,related_request,assigned_to,state,opened_by,work_notes,comments_and_work_notes,comments,assignment_group,active_incident,active_hr_case,work_notes_list,sub_ticket_updates</value>
+        <write_roles/>
+    </sys_properties>
+    <sys_translated_text action="delete_multiple" query="documentkey=171f7809db991300fa7859d0cf96194d"/>
+</record_update>

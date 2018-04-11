@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_184121_nbs.AddNBSInfo</api_name>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>AddNBSInfo</name>
+        <script><![CDATA[var AddNBSInfo = Class.create();
+
+AddNBSInfo.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+
+	NBSInfo: function() {
+
+		var num = this.getParameter('sysparm_number');
+		var act_in = '';
+		
+		var inc = new GlideRecord('incident');
+		inc.addQuery('parent',num);
+		inc.addEncodedQuery('stateNOT IN6,7,8');
+		inc.query();
+
+		while(inc.next()){
+			act_inc = inc.sys_id;
+		}
+
+				return act_inc;
+
+	},
+
+	_privateFunction: function() { // this function is not client callable         
+
+
+
+	}
+
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-04-04 08:11:29</sys_created_on>
+        <sys_id>ed15f805db991300fa7859d0cf961900</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_name>AddNBSInfo</sys_name>
+        <sys_package display_value="NBS" source="x_184121_nbs">3e3a8134dbd11300fa7859d0cf9619d1</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="NBS">3e3a8134dbd11300fa7859d0cf9619d1</sys_scope>
+        <sys_update_name>sys_script_include_ed15f805db991300fa7859d0cf961900</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-04-04 10:53:39</sys_updated_on>
+    </sys_script_include>
+</record_update>

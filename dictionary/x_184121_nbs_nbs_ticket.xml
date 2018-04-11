@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element audit="true" extends="task" label="NBS Ticket" max_length="40" name="x_184121_nbs_nbs_ticket" sizeclass="12" type="collection">
+        <element label="Active HR Case" max_length="32" name="active_hr_case" reference="sn_hr_core_case" type="reference"/>
+        <element label="Active Incident" max_length="32" name="active_incident" reference="incident" type="reference"/>
+        <element label="Caller" mandatory="true" max_length="32" name="caller" reference="sys_user" type="reference"/>
+        <element label="Related Request" mandatory="true" max_length="32" name="related_request" reference="sc_request" type="reference"/>
+        <element label="Sub Ticket Updates" max_length="4000" name="sub_ticket_updates" type="string"/>
+    </element>
+</database>
